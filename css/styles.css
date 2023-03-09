@@ -79,15 +79,23 @@ ul{
   display: flex;
   align-items: center;
 }
+.site-nav-item{
+  margin-right: 50px;
+}
 .nav-item{
   display: block;
   font-weight:  500;
   line-height: 1.15;
   text-align: left;
   padding: 32px 0px 32px 0px;
-  margin-right: 50px;
   text-decoration: none;
   color: var(--color-primary-text);
+}
+.site-item{
+ margin-right: 50px;
+}
+.site-item:last-child{
+  margin-right: 0px;
 }
 .item{
   display: block;
@@ -95,7 +103,6 @@ ul{
   line-height: 1.15;
   text-align: left;
   padding: 32px 0px 32px 0px;
-  margin-right: 50px;
   text-decoration: none;
   color: var(--color-primary-text);
 }
@@ -110,9 +117,11 @@ ul{
   text-decoration: none;
   color: var(--color-secondary-text);
 }
+.site-item-one{
+  margin-right: 50px;
+}
 .item-one-info{
   display: block;
-  margin-left: 50px;
   padding: 32px 0px 32px 0px;
   font-weight:  500;
   line-height: 1.15;
@@ -223,10 +232,8 @@ ul{
   background-color: var(--color-secondary-background);
 }
 .section-top{
-  width: 1200px;
   padding-top: 94px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-bottom: 0px;
 }
 .container {
  width: 1200px;
@@ -264,7 +271,6 @@ ul{
   margin-right: 0px;
 }
 .team-card-wrapper {
-  width: 270px;
   background-color: var(--color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -273,7 +279,8 @@ ul{
   display: flex;
 }
 .team-list-item {
-  flex-basis: calc((100% - 120px) / 4);
+  width: 270px;
+  flex-basis: calc((100% - 90px) / 4);
   margin-right: 30px;
   text-align: center;
   background-color: var(--color-white);
@@ -290,7 +297,7 @@ ul{
   text-align: center;
   vertical-align:top;
   color: var(--color-primary-text);
-  padding-top: 30px;
+  margin-top: 30px;
 }
 .container-text-other-row{
   font-weight: 400;
@@ -321,6 +328,8 @@ img {
 .footer{
   text-decoration: none; 
   background-color: var(--color-third-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-container{
   width: 1200px;
@@ -334,8 +343,6 @@ img {
   font-size: 26px;
   line-height: 1.16;
   color: var(--color-white);
-  padding-top: 60px;
-  padding-bottom: 20px;
 }
 .item-footer,
 .list-footer{
@@ -354,7 +361,6 @@ img {
   line-height: 1.42;
   text-decoration: none; 
   color: var(--color-contacts-footer); 
-  margin-top: 9px;
   margin-bottom: 9px;
 }
 .item-footer-two,
@@ -364,8 +370,6 @@ img {
   line-height: 1.42;
   text-decoration: none; 
   color: var(--color-contacts-footer);
-  margin-top: 9px;
-  padding-bottom: 60px;
 }
 .item-footer-one:focus,
 .item-footer-two:focus,
@@ -380,16 +384,20 @@ img {
 .portfolio-container{
   width: 1170px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding: 0px;
   background-color: var(--color-white);
   border: 1px solid #eeeeee;
 }
 .nav-list-btn {
   display: flex;
   justify-content: center;
+}
+.portfolio-button{
+  margin-bottom: 50px;
+  margin-right: 8px;
+}
+.portfolio-button:last-child{
+  margin-right: 0px;
 }
 .buttons{
   display: flex;
@@ -403,8 +411,6 @@ img {
   border-radius: 4px;
   background-color: var(--color-secondary-background);
   color: var(--color-primary-text);
-  margin-bottom: 50px;
-  margin-right: 8px;
   padding: 6px 22px 6px 22px;
 }
 .buttons:focus,
@@ -417,39 +423,42 @@ img {
 }
 .portfolio-cards {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   list-style: none;
 }
 .portfolio-card {
-  border: 1px solid #eeeeee;
   width: 370px;
   width: calc((100% - (30px * 2)) / 3);
   margin-right: 30px;
-  margin-bottom: 30px;  
+  margin-bottom: 30px; 
 }
-.portfolio-card:nth-child(3n) {
+.portfolio-card:nth-child(3n){
   margin-right: 0;
 }
-.portfolio-card:nth-last-child(-n+3) {
+.portfolio-card:nth-last-child(-n+3){
   margin-bottom: 0;
 }
 .portfolio-card-wrapper {
   border-top: none;
   border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
   padding: 20px 24px 20px 24px;
 }
 .portfolio-basic-anchors{
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 2;
   text-align: left;
   vertical-align: top;
-  color: var(--color-primary-text)
+  color: var(--color-primary-text);
+  margin-bottom: 4px;
 }
 .portfolio-word-meaning{
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.47;
+  line-height: 1.87;
   text-align: left;
   vertical-align: top;
   color: var(--color-secondary-text);
